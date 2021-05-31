@@ -3,35 +3,35 @@
 
 numbers = [45, 75, 12, 13, 14, 16, 78, 55, 20]
 
-const binaryTreeSearch = (arr, number) => {
+const binaryTreeSearch = (numbers, number) => {
 
-    arr.sort();
+    numbers.sort();
 
 
-    const binary = (arr, number) => {
+    const binary = (numbers, number) => {
 
-        middle = Math.ceil(arr.length/2) 
-        if(number == arr[middle]) {
+        middle = Math.ceil(numbers.length/2) 
+        if(number == numbers[middle]) {
             // console.log("Testing middle")
             return number;
         }
-        else if(arr.length == 1) {
-            if(arr[0] == number) {
+        else if(numbers.length == 1) {
+            if(numbers[0] == number) {
                 return number;
             } 
-        } else if(number > arr[middle]) {
-            arr = arr.splice(middle + 1);
-            return binary(arr, number);
-        } else if(number < arr[middle]) {
-            arr = arr.splice(0, middle);
-            return binary(arr, number);
+        } else if(number > numbers[middle]) {
+            numbers = numbers.splice(middle + 1);
+            return binary(numbers, number);
+        } else if(number < numbers[middle]) {
+            numbers = numbers.splice(0, middle);
+            return binary(numbers, number);
         } else {
             return `Number ${number} was not found.`
         }
 
     }
 
-    return binary(arr, number);
+    return binary(numbers, number);
 }
 
 console.log(`Test for the middle: ${binaryTreeSearch(numbers, 45)}`)
