@@ -3,7 +3,7 @@
 
 numbers = [45, 75, 12, 13, 14, 16, 78, 55, 20]
 
-const binaryTreeSearch = (arr, number) => {
+const numberBinaryTreeSearch = (arr, number) => {
 
     arr.sort();
 
@@ -34,7 +34,7 @@ const binaryTreeSearch = (arr, number) => {
     return binary(arr, number);
 }
 
-console.log(`Test for the middle: ${binaryTreeSearch(numbers, 45)}`)
-console.log(`Test for the right: ${binaryTreeSearch(numbers, 55)}`)
-console.log(`Test for the left: ${binaryTreeSearch(numbers, 12)}`)
-console.log(`Test for not found: ${binaryTreeSearch(numbers, 22)}`)
+console.log(`Test for the middle: ${numberBinaryTreeSearch(numbers, 45)}`)
+console.log(`Test for the right: ${numberBinaryTreeSearch(numbers, 55)}`)
+console.log(`Test for the left: ${numberBinaryTreeSearch(numbers, 12)}`)
+console.log(`Test for not found: ${numberBinaryTreeSearch(numbers, 22)}`)
