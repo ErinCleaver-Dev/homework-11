@@ -9,7 +9,7 @@ const numberBinaryTreeSearch = (numbers, number) => {
 
         // finds the middle
         let middle = Math.ceil(numbers.length/2) 
- // checks if the length is equal to 1
+        // checks if the length is equal to 1
         if(numbers.length == 1) {
             if(numbers[0] == number) {
                 return `Number ${number} was found.`;
@@ -18,13 +18,13 @@ const numberBinaryTreeSearch = (numbers, number) => {
         } else {
             return `Number ${number} was not found.`
         }
-        // checks if the current point is greate then the number.
       
         // checks if the current number is equal to the middle
         if(number == numbers[middle]) {
             // console.log("Testing middle")
             return `Number ${number} was found.`;
         }
+        // checks if the current point is greate then the number.
         else if(number > numbers[middle]) {
             numbers = numbers.splice(middle + 1);
             return binary(numbers, number);
