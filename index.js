@@ -1,6 +1,6 @@
 numbers = [45, 75, 12, 13, 14, 16, 78, 55, 20]
 
-const numberBinaryTreeSearch = (arr, number) => {
+const numberBinaryTreeSearch = (numbers, number) => {
 
     numbers.sort();
 
