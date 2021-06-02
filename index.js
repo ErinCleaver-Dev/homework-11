@@ -39,7 +39,7 @@ const numberBinaryTreeSearch = (numbers, number) => {
     return binary(numbers, number);
 }
 
-console.log(`Test for the middle: ${numberBinaryTreeSearch(numbers, 45)}`)
-console.log(`Test for the right: ${numberBinaryTreeSearch(numbers, 55)}`)
-console.log(`Test for the left: ${numberBinaryTreeSearch(numbers, 12)}`)
-console.log(`Test for not found: ${numberBinaryTreeSearch(numbers, 22)}`)
+console.log(`%c Test for the middle: ${numberBinaryTreeSearch(numbers, 45)}`, 'color: white')
+console.log(`%c Test for the right: ${numberBinaryTreeSearch(numbers, 55)}`, 'color: white')
+console.log(`%c Test for the left: ${numberBinaryTreeSearch(numbers, 12)}`, 'color: white')
+console.log(`%c Test for not found: ${numberBinaryTreeSearch(numbers, 22)}`, 'color: white')
