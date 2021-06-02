@@ -10,11 +10,11 @@ const numberBinaryTreeSearch = (numbers, number) => {
         middle = Math.ceil(numbers.length/2) 
         if(number == numbers[middle]) {
             // console.log("Testing middle")
-            return number;
+            return `Number ${number} was found.`;
         }
         else if(numbers.length == 1) {
             if(numbers[0] == number) {
-                return number;
+                return `Number ${number} was found.`;
             } 
         } else if(number > numbers[middle]) {
             numbers = numbers.splice(middle + 1);
