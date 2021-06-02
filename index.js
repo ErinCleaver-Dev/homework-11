@@ -14,9 +14,10 @@ const numberBinaryTreeSearch = (numbers, number) => {
             if(numbers[0] == number) {
                 return `Number ${number} was found.`;
             } // if it dose not return true it will print that the number is not found.
-             else {
+           
+        } else {
             return `Number ${number} was not found.`
-        }}
+        }
         // checks if the current point is greate then the number.
       
         // checks if the current number is equal to the middle
